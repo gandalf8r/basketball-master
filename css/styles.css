@@ -240,7 +240,7 @@ select {
 
 /* Banner */
 .banner {
-    background-image: url(../images/baner.jpg);
+    background-image: url(../images/baner.webp);
     background-position: center center;
     background-size: cover;
     background-repeat: no-repeat;
