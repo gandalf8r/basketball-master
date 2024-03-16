@@ -92,10 +92,13 @@ select {
     color: #1A202C;
     text-decoration: none;
     font-weight: 600;
+    text-wrap: nowrap;
 }
 
 .header__logo svg {
     margin-right: 10px;
+    min-width: 25px;
+    min-height: 25px;
 }
 
 .header__wrapper {
@@ -362,3 +365,35 @@ select {
     padding: 5px;
 }
 /* Footer end */
+
+/* MEDIA */
+/* Header media */
+@media (max-width: 768px) {
+    .header__menu {
+        margin-right: 25px;
+    }
+
+    .header__list li + li {
+        margin-left: 25px;
+    }
+}
+
+@media (max-width: 576px) {
+    .header__nav {
+        flex-direction: column;
+    }
+
+    .header__wrapper {
+        justify-content: space-between;
+        width: 100%;
+    }
+
+    .slider__img {
+        width: 60px;
+        height: 60px;
+    }
+
+    .slider__title {
+        font-size: 14px;
+    }
+}
